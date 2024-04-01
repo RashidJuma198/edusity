@@ -37,3 +37,8 @@ a {
   height: 20px;
   margin-left: 10px;
 }
+
+.btn.btn-dark {
+  background: #212ea0;
+  color: #fff;
+}
