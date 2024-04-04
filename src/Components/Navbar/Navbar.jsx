@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
@@ -13,24 +15,17 @@ const Navbar = () => {
     <nav className={`container ${sticky ? "dark-nav" : ""} `}>
       <img className="logo" src={logo} alt="" />
       <ul>
-        <li>
-          <button className="btn">Home</button>
-        </li>
-        <li>
-          <button className="btn">Program</button>
-        </li>
-        <li>
-          <button className="btn">About Us</button>
-        </li>
-        <li>
-          <button className="btn">Campus</button>
-        </li>
-        <li>
-          <button className="btn">Testimonials</button>
-        </li>
-        <li>
-          <button className="btn">Contact Us</button>
-        </li>
+        <li>Home</li>
+        <li>Program</li>
+        <li>About Us</li>
+        <li>Campus</li>
+        <li>Testimonials</li>
+        <li>Contact Us</li>
+        {/* <li>
+          <a href="https://api.whatsapp.com/send?phone=254793834558&text=Welcome%20to%20Baringo%20Tours%20Safaris">
+            WhatsApp
+          </a>
+        </li> */}
       </ul>
     </nav>
   );
