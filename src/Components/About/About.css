@@ -24,6 +24,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .about h3 {
@@ -42,4 +43,20 @@
 .about p {
   margin-bottom: 15px;
   color: #676766;
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-left {
+    flex-basis: 100%;
+    margin: 20px;
+    order: 2;
+  }
+  .about-right {
+    flex-basis: 100%;
+  }
 }
